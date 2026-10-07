@@ -7,7 +7,6 @@ on:
 
 env:
   GHCR_REGISTRY: ghcr.io
-  IMAGE_NAME: ${{ github.repository }}/picoclaw-launcher
 
 jobs:
   build:
@@ -37,8 +36,8 @@ jobs:
           file: ./docker/Dockerfile.launcher
           push: true
           tags: |
-            ${{ env.GHCR_REGISTRY }}/${{ env.IMAGE_NAME }}:latest
-            ${{ env.GHCR_REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.sha }}
+            ${{ env.GHCR_REGISTRY }}/shawnhu0621/picoclaw-launcher:latest
+            ${{ env.GHCR_REGISTRY }}/shawnhu0621/picoclaw-launcher:${{ github.sha }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
           platforms: linux/amd64,linux/arm64
