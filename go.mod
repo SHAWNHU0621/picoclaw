@@ -155,3 +155,5 @@ require (
 )
 
 replace github.com/bwmarrin/discordgo => github.com/yeongaori/discordgo-fork v0.0.0-20260319072544-e8e546f5d532
+
+replace github.com/tencent-connect/botgo => github.com/SHAWNHU0621/botgo 9e0f5b2cb1e4378606904d0c101f98e08f529774
